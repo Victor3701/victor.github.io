@@ -79,7 +79,9 @@ h3 {
 #portfolio li {
     background: #fff;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: #32565f;
     margin-bottom: 10px;
 }
 
