@@ -45,6 +45,12 @@ $(function () {
     // example usage: createPlatform(x,y,width,height)
 
 
+createPlatform(695,675,195,15);
+createPlatform(940,585,220,15);
+createPlatform(495,450,305,15);
+createPlatform(320,330,150,15);
+createPlatform(635,220,265,15);
+createPlatform(1200,220,185,15);
 
     
     // TODO 2
@@ -53,6 +59,7 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
+    createCollectable(diamond,695,680,gravity="2.8",bounce="1")
 
 
 
@@ -62,6 +69,7 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
+createCannon(right,460,400,305,15)
 
 
 
