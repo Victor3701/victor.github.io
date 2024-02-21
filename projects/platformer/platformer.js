@@ -45,12 +45,13 @@ $(function () {
     // example usage: createPlatform(x,y,width,height)
 
 
-createPlatform(695,675,195,15);
+createPlatform(695,675,195,100);
 createPlatform(940,585,220,15);
-createPlatform(495,450,305,15);
-createPlatform(320,330,150,15);
-createPlatform(635,220,265,15);
-createPlatform(1200,220,185,15);
+createPlatform(1145,485,15,100);
+createPlatform(430,450,340,15);
+createPlatform(320,330,150,135);
+createPlatform(635,220,265,25);
+createPlatform(1195,220,210,45);
 
     
     // TODO 2
@@ -59,8 +60,12 @@ createPlatform(1200,220,185,15);
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable(diamond,695,680,gravity="2.8",bounce="1")
-
+createCollectable("database", 845, 630, 6, 0.7);
+createCollectable("database", 525, 400, 6, 0.7);
+createCollectable("database", 700, 400, 6, 0.7);
+createCollectable("database", 370, 200, 6, 0.7);
+createCollectable("database", 1270, 170, 6, 0.7);
+createCollectable("database", 745, 170, 6, 0.7);
 
 
     // TODO 3
@@ -69,7 +74,9 @@ createPlatform(1200,220,185,15);
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-createCannon(right,460,400,305,15)
+createCannon("bottom", 1230, 1000);
+createCannon("top", 925, 1000);
+createCannon("right", 490, 2000);
 
 
 

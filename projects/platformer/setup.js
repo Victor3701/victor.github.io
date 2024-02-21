@@ -30,7 +30,7 @@ const player = {
 let hitDx;
 let hitDy;
 let hitBoxWidth = 50 * playerScale;
-let hitBoxHeight = 95 * playerScale;
+let hitBoxHeight = 105 * playerScale;
 let firstTimeSetup = true;
 
 const keyPress = {
