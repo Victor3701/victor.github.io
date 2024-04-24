@@ -8,14 +8,14 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgb(1, 207, 207);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 0px;  /* <--- Change me! */ /* 1700 = max distance */
 		}
 		.board{
 			height: 100vh;
@@ -62,28 +62,51 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-
+			var positionX = 0.5
+			var points = 0
+			var speed = 5
+			var positionY;
+			var speedY;
+			var boardHeight = jQuery(window).height();
 			
 
+			
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-function update() {
-			
+			function update() {
+				positionX = positionX + speed;
 
-};
+				moveBoxTo(positionX, positionY) 
+				
+					
 
+
+				if (positionX > boardWidth) {
+					speed = -speed;
+				}
+
+				if (positionX < 0) {
+					speed = speed *-1
+				}
+
+
+
+			};
+			// none of the code challanges were working for me // 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
+				positionX = 0 
+				speed = speed + 5;
+				points = points + 1;
+					changeBoxText(points);
 				
-
-
 			};
 		})();
 	</script>
