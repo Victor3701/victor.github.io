@@ -78,6 +78,7 @@
 			*/
 			function update() {
 				positionX = positionX + speed;
+				
 
 				moveBoxTo(positionX, positionY) 
 				
@@ -102,8 +103,15 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				positionX = 0 
-				speed = speed + 5;
+				if (speed = speed === 0) 
+				{
+					speed + 3
+				} 
+				else if (speed = -speed === 0)
+				{
+					speed - 3
+				}	
+				positionX = 0
 				points = points + 1;
 					changeBoxText(points);
 				
