@@ -103,15 +103,16 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				if (speed = speed === 0) 
+				if (speed + 1 === 0) 
 				{
 					speed + 3
 				} 
-				else if (speed = -speed === 0)
+				else if (speed + 2 === 0)
 				{
 					speed - 3
 				}	
 				positionX = 0
+				speed += 3
 				points = points + 1;
 					changeBoxText(points);
 				
